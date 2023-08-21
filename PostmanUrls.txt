@@ -1,0 +1,53 @@
+****************  PersonController  *******************
+
+1. POST _ INSERT
+http://localhost:8080/personal/
+RequestBody
+{
+"name" : "Ali",
+"surname" : "Aliyev",
+"phone" : "2222",
+"address" : "Baki",
+"status" : 1
+}
+
+
+------------------
+
+2. PUT _ UPDATE
+http://localhost:8080/personal/
+RequestBody
+{
+    "id" : 15,
+    "name" : "Rasim1",
+    "surname" : "Babayev2",
+    "phone" : "132456",
+    "address" : "Moscow",
+    "status" : 4
+}
+
+
+-------------------
+
+3. GET - select all
+http://localhost:8080/personal/allPerson
+
+------------------
+
+4. GET - select by id
+RequestParam
+http://localhost:8080/personal/person?id=15
+
+id=15
+
+-----------------
+
+5. DELETE - delete
+http://localhost:8080/personal/del
+RequestBody
+{
+    "id" : 19
+}
+
+
+*******************************************************
