@@ -1,6 +1,6 @@
 package com.matrix.demotestapp.repository.constQueries;
 
-public interface IQuery {
+public interface IPersonQueries {
      String insertQuery = "INSERT INTO persons (name, surname, phone, address, status) VALUES (?, ?, ?, ?, ?);";
      String selectAllQuery = "SELECT * FROM persons;";
      String selectByIdQuery = "SELECT * FROM persons WHERE id = ?;";
